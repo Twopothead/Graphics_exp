@@ -46,19 +46,19 @@ void show(){
 		stangle = endangle;
 		top=top+h;
 	}
-	outtextxy(20,100,"ÕâÀï½ö¹©Õ¹Ê¾");
-	outtextxy(20,150,"Çë°´ÈÎÒâ¼üÊÖ¶¯ÊäÈëÊı¾İ£¡");
+	outtextxy(20,100,"è¿™é‡Œä»…ä¾›å±•ç¤º");
+	outtextxy(20,150,"è¯·æŒ‰ä»»æ„é”®æ‰‹åŠ¨è¾“å…¥æ•°æ®ï¼");
 	getch(); 
 	closegraph(); 
 }
 template<class T>
 void to_string(string & result,const T& t){
-    //to_string ÓÃÁËÀàÄ£°å£¬½«ÊıÖµÀàĞÍÈçintÖ®Àà×ª»¯³ÉstringÀàĞÍ
-    //to_stringº¯ÊıÒªÓÃµ½sstream.hÕâ¸öÍ·ÎÄ¼ş£¨Ô­stringstream.h½ÏÀÏ£¬ÒÑÆúÓÃ£©
-    //Ô­ÀíÊÇ´´½¨Ò»¸öÁ÷£¬°ÑÖµ´«µİÈçÁ÷ÖĞ£¬»ñÈ¡×ª»»ºóµÄ×Ö·û×ª²¢½«ÆäĞ´ÈëÄ¿µÄ×Ö·û´®
-        ostringstream oss;//´´½¨Ò»¸öÁ÷
-        oss<<t;//°ÑÖµ´«µİÈçÁ÷ÖĞ
-        result=oss.str();//»ñÈ¡×ª»»ºóµÄ×Ö·û×ª²¢½«ÆäĞ´Èëresult
+    //to_string ç”¨äº†ç±»æ¨¡æ¿ï¼Œå°†æ•°å€¼ç±»å‹å¦‚intä¹‹ç±»è½¬åŒ–æˆstringç±»å‹
+    //to_stringå‡½æ•°è¦ç”¨åˆ°sstream.hè¿™ä¸ªå¤´æ–‡ä»¶ï¼ˆåŸstringstream.hè¾ƒè€ï¼Œå·²å¼ƒç”¨ï¼‰
+    //åŸç†æ˜¯åˆ›å»ºä¸€ä¸ªæµï¼ŒæŠŠå€¼ä¼ é€’å¦‚æµä¸­ï¼Œè·å–è½¬æ¢åçš„å­—ç¬¦è½¬å¹¶å°†å…¶å†™å…¥ç›®çš„å­—ç¬¦ä¸²
+        ostringstream oss;//åˆ›å»ºä¸€ä¸ªæµ
+        oss<<t;//æŠŠå€¼ä¼ é€’å¦‚æµä¸­
+        result=oss.str();//è·å–è½¬æ¢åçš„å­—ç¬¦è½¬å¹¶å°†å…¶å†™å…¥result
 }
 char InputText[6][10]={NULL};
 void getPercent(){
@@ -66,13 +66,13 @@ InputAgain:
 	double totalpercent=0.0;
 	for(int i=0;i<6;i++){
 		if(i!=5){
-			cout<<"ÇëÊäÈë"<<Name[i]<<"µÄ°Ù·Ö±È(eg:0.17)£º";
+			cout<<"è¯·è¾“å…¥"<<Name[i]<<"çš„ç™¾åˆ†æ¯”(eg:0.17)ï¼š";
 			cin>>percent[i];
 			totalpercent+=percent[i];
 		}
 		else{
 			if(totalpercent>1){
-				cout<<"¶Ô²»Æğ£¬ÄãÊäÈëµÄ°Ù·Ö±ÈÖ®ºÍÒÑ¾­³¬¹ı100%,ÇëÖØĞÂÊäÈë£¡";
+				cout<<"å¯¹ä¸èµ·ï¼Œä½ è¾“å…¥çš„ç™¾åˆ†æ¯”ä¹‹å’Œå·²ç»è¶…è¿‡100%,è¯·é‡æ–°è¾“å…¥ï¼";
 				goto InputAgain;
 			}
 			double all=1.0;
@@ -85,7 +85,7 @@ InputAgain:
 		itoa(Temp,InputText[i],10);
 		char *b="%";
 		strcat(InputText[i],b);
-		cout<<Name[i]<<"°Ù·Ö±ÈÊÇ"<<InputText[i]<<endl;
+		cout<<Name[i]<<"ç™¾åˆ†æ¯”æ˜¯"<<InputText[i]<<endl;
 	}
 	system("pause");
 }

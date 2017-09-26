@@ -39,15 +39,15 @@ void Year_red_yellow_Bar(int yellow_bar_height,int red_bar_height){
 
 }
 void show(){
-	initgraph(1000, 1000); 
+	initgraph(1000, 1000);
 	My_legend_bar();
 	Year_red_yellow_Bar(30,45);
 	Year_red_yellow_Bar(100,190);
 	Year_red_yellow_Bar(200,400);
 	outtextxy(400,650,"stat- histogram");
-	outtextxy(20,200,"ÕâÀï½ö¹©Õ¹Ê¾");
-	outtextxy(20,250,"Çë°´ÈÎÒâ¼üÊÖ¶¯ÊäÈëÊı¾İ£¡");
-	getch(); 
+	outtextxy(20,200,"è¿™é‡Œä»…ä¾›å±•ç¤º");
+	outtextxy(20,250,"è¯·æŒ‰ä»»æ„é”®æ‰‹åŠ¨è¾“å…¥æ•°æ®ï¼");
+	getch();
 	closegraph();
 };
 bool InputDataInit=false;
@@ -55,33 +55,33 @@ void InputData(){
 	if(!InputDataInit){
 		Year_left_X=INIT_BAR_LEFT;
 		Year_Time=0;
-		//ÖØĞÂ³õÊ¼»¯
+		//é‡æ–°åˆå§‹åŒ–
 		InputDataInit=true;
 	}
 	int nation_1949,social_1949,nation_1956,social_1956,
 			nation_1978,social_1978;
-	cout<<"ÇëÊäÈë1949ÄêµÄnation income(default:30):";
+	cout<<"è¯·è¾“å…¥1949å¹´çš„nation income(default:30):";
 	cin>>nation_1949;
-	cout<<"ÇëÊäÈë1949ÄêµÄtotal social product(default:45):";
+	cout<<"è¯·è¾“å…¥1949å¹´çš„total social product(default:45):";
 	cin>>social_1949;
-	cout<<"ÇëÊäÈë1956ÄêµÄnation income(default:100):";
+	cout<<"è¯·è¾“å…¥1956å¹´çš„nation income(default:100):";
 	cin>>nation_1956;
-	cout<<"ÇëÊäÈë1956ÄêµÄtotal social product(default:190):";
+	cout<<"è¯·è¾“å…¥1956å¹´çš„total social product(default:190):";
 	cin>>social_1956;
-	cout<<"ÇëÊäÈë1978ÄêµÄnation income(default:200):";
+	cout<<"è¯·è¾“å…¥1978å¹´çš„nation income(default:200):";
 	cin>>nation_1978;
-	cout<<"ÇëÊäÈë1978ÄêµÄtotal social product(default:400):";
+	cout<<"è¯·è¾“å…¥1978å¹´çš„total social product(default:400):";
 	cin>>social_1978;
 	system("pause");
-	initgraph(1000, 1000); 
+	initgraph(1000, 1000);
 	My_legend_bar();
 	Year_red_yellow_Bar(nation_1949,social_1949);
 	Year_red_yellow_Bar(nation_1956,social_1956);
 	Year_red_yellow_Bar(nation_1978,social_1978);
 	outtextxy(400,650,"stat- histogram");
-	//outtextxy(20,200,"ÕâÀï½ö¹©Õ¹Ê¾");
-	//outtextxy(20,250,"Çë°´ÈÎÒâ¼üÊÖ¶¯ÊäÈëÊı¾İ£¡");
-	getch(); 
+	//outtextxy(20,200,"è¿™é‡Œä»…ä¾›å±•ç¤º");
+	//outtextxy(20,250,"è¯·æŒ‰ä»»æ„é”®æ‰‹åŠ¨è¾“å…¥æ•°æ®ï¼");
+	getch();
 	closegraph();
 
 }
