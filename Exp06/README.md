@@ -49,7 +49,7 @@ make
 
 
 ```cpp
-/*本程序采用Ubunru系统下的OpenGL开发
+/*本程序采用Ubuntu系统下的OpenGL开发
  *      2017 邱日
  */
 #include <GL/glut.h>
